@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+steps:
+  - name: doit
+    image: node:14.16.1-alpine
+    commands:
+      - npm install
+      - npm run lint
+      - npm run test
+ 
